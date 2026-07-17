@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            text-align: left;
+            background-color: rgb(232, 247, 242);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: larger;
+            font-weight: 300;
+        }
+        p{
+            color: red;
+        }
+        label{
+            margin: 10px;
+            font-size: large;
+            font-weight: 200;
+        }
+        button{
+            height: 25px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+        input{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABES 2<sup>nd</sup>Year</h1>
+    </header>
+    <main>
+        <form action="RegForm.json" class="regForm">
+            <label>First Name*</label><input type="text" placeholder="Enter Your First Name" required><br>
+            <label>Last Name*</label><input type="text" placeholder="Enter Your Last Name" required><br>
+            <label>Email*<input type="email" placeholder="Enter Your Email" required><br>
+            <label>Password*</label><input type="password" placeholder="Enter Your Password" required><br>
+            <label>Gender*</label><br>
+            <input type="radio" name="Gender" id="male" required>Male<br>
+            <input type="radio" name="Gender" id="female" required>Female<br>
+            
+            <label>Contact Number*</label><input type="tel" placeholder="Enter Your Contact Number" required><br>
+            <label>Course*</label><br>
+            <input type="radio" name="course" id="bTech" required>BTech<br>
+            <input type="radio" name="course" id="mTech" required>Mtech<br>
+            <input type="radio" name="course" id="mba" required>MBA<br>
+            <input type="radio" name="course" id="bca" required>BCA<br>   
+    </main>
+    <footer>
+        <button id="submit">Submit</button>
+        <button id="reset">Reset</button>
+        <p>Feilds Marked with * are required.</p>
+    </footer>
+</body>
+</html>
