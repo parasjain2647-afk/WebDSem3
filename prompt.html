@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n = prompt("n")
+        function name(f,l){
+        var first=f;
+        var last=l;
+        return first+" "+last;
+        }
+        function display(){
+            document.write("Hellooo...."+name(prompt("Enter your first name"),prompt("Enter your last name")))
+        }
+        function show(){
+            fullName=name(prompt("Enter your first name"),prompt("Enter your last name"));
+            if(fullName=="Kakul Raghuvanshi" ||fullName=="kakul Raghuvanshi" ||fullName=="Kakul raghuvanshi"){
+                document.write(fullName+" is a budhhu bachii...😂😂😂")
+            }
+            else if(fullName=="Paras Jain" ||fullName=="Paras Jain" ||fullName=="Paras Jain"){
+                document.write(fullName+" is a smart guy...😎😎😎")
+            }
+            else display();
+        }
+        function sum(){
+            let a=parseInt(prompt("Enter a"));
+            let b=parseInt(prompt("Enter b"));
+            c=a+b;
+            document.write(c);
+        }
+        function star(n){
+            n=prompt("Enter Number of lines");
+            for(let i=0; i<n+1;i++){
+                for(let j=0; j<=i;j++){
+                document.write('*');
+                }
+            document.write('\n');
+            }
+            for(let i=n; i>=0;i--){
+                for(let j=i; j>=0;j--){
+                document.write('*');
+                }
+            document.write('\n');
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="star(n)" value="Result">
+    <input type="button" onclick="show()" value="Name">
+</body>
+</html>
