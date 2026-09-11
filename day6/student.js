@@ -1,0 +1,20 @@
+const student={
+    name:"Aman",
+    marks:85,
+    grade:"A",
+    add:function(){
+        this.marks+=5;
+    },
+    update:function(){
+        this.grade+="+";
+    },
+    disp:function(){
+        console.log(this.name);
+        console.log(this.marks);
+        console.log(this.grade);
+    }
+};
+student.disp();
+student.add();
+student.update();
+student.disp();
